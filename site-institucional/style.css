@@ -7,7 +7,7 @@
 .header {
     height: 100px;
     background-color: black;
-    border: aquamarine 3px solid;
+    border: #32B9CD 3px solid;
 }
 
 .container {
@@ -24,22 +24,26 @@
     align-items: center;    
 }
 
+.header h1 {
+    color: #32B9CD;
+}
+
 .navbar {
     /* background-color: orange; */
-    width: 35%;
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
 }
 
-.header h1 {
-    color: aquamarine;
-}
-
 .navbar li {
+    margin-right: 50px;
     font-weight: lighter;
     color: goldenrod;
+}
+
+.navbar li:hover {
+    color: red;
 }
 
 .navbar li a {
@@ -49,4 +53,120 @@
 
 .navbar .active {
     font-weight: bolder;
+}
+
+.banner {
+    height: 500px;
+    background-image: url('img/bg-jelly-fish-para_outras_pags.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-right: 250px;
+    width: 10%;
+    color: white;
+    font-size: 40px;
+}
+
+.message span {
+    font-weight: bolder;
+}
+
+.proposito {
+    height: 450px;
+    background-color: #E5E5E5;
+}
+
+.proposito .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    color: #E6005A;
+}
+
+.proposito .container .mvv div img {
+    height: 100px;
+    width: 100px;
+} 
+
+.proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+   color: #E6005A; 
+   font-weight: bolder;
+   margin: 25px 0;
+}
+
+.footer {
+    background-color: #32B9CD;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.banner .formLogin {
+    background-color: white;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .formLogin h2 {
+    color: #E6005A;
+}
+
+.banner .formLogin div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .formLogin div span {
+    color: #E6005A;
+}
+
+.banner .formLogin div input {
+    border: 2px solid #E6005A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner .formLogin button {
+    background-color: #E6005A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
